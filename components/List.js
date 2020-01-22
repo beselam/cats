@@ -23,7 +23,7 @@ import ListItem from '../components/ListItem'
   
     flatStyle:{
       flex:1,
-      backgroundColor:'black',
+  
    
   
     }

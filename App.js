@@ -45,8 +45,14 @@ const mediaArray = [
 
 const App = () => {
       return (
+        
         <View style={styles.container}>
-           
+           <View style={styles.imageHolder}>
+             <View style={styles.textHolder}>
+               <Text style={styles.floatTExt}>1444 Homeless cats</Text>
+             </View>
+           <Image source = {require('./images/cat.jpg')} />
+           </View>
               <List mediaArray={mediaArray} />
 
           </View>
@@ -58,13 +64,34 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 27,
     width: Dimensions.get('window').width,
-    backgroundColor: "red",
-
     alignItems: "center",
     justifyContent: "center"
   },
   main:{
     flex:1,
+  },
+  floatTExt:{
+  
+   zIndex:4,
+   color:'white'
+   
+
+   
+  },
+  imageHolder:{
+   marginBottom:10,
+  },
+  textHolder:{
+   position:'absolute',
+   zIndex:4,
+   top:30,
+   left:10,
+   backgroundColor:'rgba(192,192,192,0.6)',
+   borderWidth:2,
+   padding:2,
+   borderColor:'white',
+   
+   
   }
  
 });
