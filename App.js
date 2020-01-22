@@ -47,6 +47,9 @@ const App = () => {
       return (
         
         <View style={styles.container}>
+          <View style={styles.statusBar}>
+
+          </View>
            <View style={styles.imageHolder}>
              <View style={styles.textHolder}>
                <Text style={styles.floatTExt}>1444 Homeless cats</Text>
@@ -62,7 +65,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 27,
     width: Dimensions.get('window').width,
     alignItems: "center",
     justifyContent: "center"
@@ -77,6 +79,12 @@ const styles = StyleSheet.create({
    
 
    
+  },
+
+  statusBar:{
+    padding:16,
+    backgroundColor:'green',
+    width: Dimensions.get('window').width,
   },
   imageHolder:{
    marginBottom:10,
